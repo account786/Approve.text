@@ -300,7 +300,7 @@ def superuser():
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
-    DARK=requests.get("https://github.com/account786/Approve.text.git").text
+    DARK=requests.get("https://github.com/account786/Approve.text/blob/main/approve.txt").text
     if id in DARK:
         Main()
     else:
